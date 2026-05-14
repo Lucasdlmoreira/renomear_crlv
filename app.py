@@ -44,7 +44,7 @@ if uploaded_files:
                 
                 if placa:
                     # Ajuste exato do nome conforme solicitado
-                    novo_nome = f"CRLV - e - {placa} - 2026.pdf"
+                    novo_nome = f"CRLV-e - {placa} - 2026.pdf"
                     zip_file.writestr(novo_nome, bytes_data)
                     arquivos_processados += 1
                 else:
