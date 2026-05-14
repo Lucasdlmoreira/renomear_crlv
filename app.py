@@ -21,7 +21,7 @@ def extrair_placa(pdf_bytes):
 
 st.set_page_config(page_title="Renomeador CRLV-e", page_icon="📄")
 
-st.title("📄 Renomeador em Massa: CRLV - e")
+st.title("Renomear CRLV - e")
 st.markdown("""
 1. Arraste todos os arquivos de uma vez.
 2. O sistema vai extrair a placa e renomear como: **CRLV - e - PLACA - 2026**
@@ -30,7 +30,7 @@ st.markdown("""
 uploaded_files = st.file_uploader("Selecione os PDFs", type="pdf", accept_multiple_files=True)
 
 if uploaded_files:
-    if st.button(f"🚀 Renomear {len(uploaded_files)} arquivos agora"):
+    if st.button(f"Renomear {len(uploaded_files)} arquivos agora"):
         zip_buffer = io.BytesIO()
         arquivos_processados = 0
         erros = []
